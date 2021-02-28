@@ -20,9 +20,6 @@ slack_event_adapter = SlackEventAdapter(os.environ['SIGNING_SECRET'],'/slack/eve
 # Using WebClient in slack, there are other clients built-in as well !!
 client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 
-# connect the bot to the channel in Slack Channel
-client.chat_postMessage(channel='#test', text='Send Message Demo')
-
 # Get Bot ID
 BOT_ID = client.api_call("auth.test")['user_id']
 
