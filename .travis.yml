@@ -3,6 +3,8 @@ python:
   - "2.7"
   - "3.8"
   # command to install dependencies
-install: pip --version
+install: "pip install -r requirement.txt"
 # command to run tests
-script: python TestCheckSeason.py
+script: coverage run TestCheckSeason.py
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
