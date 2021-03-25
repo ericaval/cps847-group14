@@ -24,13 +24,13 @@ after_success:
 
   - docker push arshiaryerson/cps847a2
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id:
-    secure: ""
-  secret_access_key:
-    secure: ""
-  region: "us-east-1"
-  app: "cps847-a2"
-  env: "cps847-a2-env"
-  bucket_name: "the-target-S3-bucket"
+# deploy:
+#  provider: elasticbeanstalk
+#  access_key_id:
+#    secure: ""
+#  secret_access_key:
+#    secure: ""
+#  region: "us-east-1"
+#  app: "cps847-a2"
+#  env: "cps847-a2-env"
+#  bucket_name: "the-target-S3-bucket"
