@@ -22,7 +22,7 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-  - docker push cps847a2
+  - docker push arshiaryerson/cps847a2
 
 deploy:
   provider: elasticbeanstalk
