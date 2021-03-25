@@ -17,12 +17,12 @@ services:
 
 
 script:
-- docker image build -t arshiaryerson/cps847a2 .
+- docker image build -t arshiaryerson/cps847-a2 .
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-  - docker push arshiaryerson/cps847a2
+  - docker push arshiaryerson/cps847-a2
 
 # deploy:
 #  provider: elasticbeanstalk
