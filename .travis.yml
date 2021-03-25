@@ -30,7 +30,7 @@ deploy:
   secret_access_key: $AWS_SECRET
   region: "us-east-2"
   app: "cps847-a2"
-  env: "Cps847-a2-env"
+  env: "Cps847a2-env"
   bucket_name: "elasticbeanstalk-us-east-2-517095703763"
   on:
     branch: "main"
