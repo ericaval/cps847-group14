@@ -17,7 +17,7 @@ services:
 
 
 script:
-- docker image build -t cps847a2 .
+- docker image build -t arshiaryerson/cps847a2 .
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
